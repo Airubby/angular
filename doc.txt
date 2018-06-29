@@ -1,0 +1,2 @@
+npm install -g @angular/cli
+ng new name   //创建name项目
