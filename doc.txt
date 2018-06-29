@@ -1,2 +1,11 @@
 npm install -g @angular/cli
-ng new name   //创建name项目
+ng new name   //鍒涘缓椤圭洰name
+
+npm install jquery --save
+npm install bootstrap --save
+npm install @types/jquery --save-dev
+npm install @types/bootstrap --save-dev
+
+
+鐢熸垚缁勪欢name
+ng g component name  
