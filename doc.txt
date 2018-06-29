@@ -2,7 +2,7 @@ npm install -g @angular/cli
 ng new name   //创建项目name
 
 npm install jquery --save
-npm install bootstrap --save
+npm install bootstrap@3.3.7 --save
 npm install @types/jquery --save-dev
 npm install @types/bootstrap --save-dev
 
