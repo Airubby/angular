@@ -1,5 +1,5 @@
 npm install -g @angular/cli
-ng new name   //创建项目name
+ng new name --routing  //创建项目name
 
 npm install jquery --save
 npm install bootstrap@3.3.7 --save
@@ -9,3 +9,7 @@ npm install @types/bootstrap --save-dev
 
 生成组件name
 ng g component name  
+
+/product?id=1&name=2 =>   ActivatedRoute.queryParams[id]
+{path:/product/:id} => /product/1  =>  ActivatedRoute.params[id]
+{path:/product,component:ProductComponent,data:[{isProd:true}]} => ActivatedRoute.data[0][isProd]
