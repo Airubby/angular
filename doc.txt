@@ -13,3 +13,7 @@ ng g component name
 /product?id=1&name=2 =>   ActivatedRoute.queryParams[id]
 {path:/product/:id} => /product/1  =>  ActivatedRoute.params[id]
 {path:/product,component:ProductComponent,data:[{isProd:true}]} => ActivatedRoute.data[0][isProd]
+
+
+生成服务name  在shared文件下面生成product服务
+ng g service shared/product
