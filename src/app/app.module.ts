@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -12,10 +13,11 @@ import { StarsComponent } from './stars/stars.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { HomeComponent } from './home/home.component';
 import { ProductService } from './shared/product.service';
-
-
+import { FilterPipe } from './pipe/filter.pipe';
+//declarations只能声明指令，组件和管道, 
+//imports浏览器模块  FormsModule,HttpModule
+//providers声明服务,依赖注入
 @NgModule({
-  //只能声明指令，组件和管道, 
   declarations: [ 
     AppComponent,
     NavbarComponent,
@@ -25,14 +27,17 @@ import { ProductService } from './shared/product.service';
     ProductComponent,
     ProductDetailComponent,
     HomeComponent,
+    FilterPipe,
     StarsComponent,
   ],
-  //浏览器模块  FormsModule,HttpModule
+  
   imports: [
     BrowserModule,
-    AppRoutingModule  
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,  
   ],
-  //声明服务,依赖注入
+  
   providers: [ProductService], 
   bootstrap: [AppComponent]
 })

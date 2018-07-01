@@ -17,3 +17,7 @@ ng g component name
 
 生成服务name  在shared文件下面生成product服务
 ng g service shared/product
+
+
+生成管道name 在pipe文件下面生成multiple管道
+ng g pipe pipe/multiple

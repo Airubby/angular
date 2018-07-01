@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,15 +9,21 @@ import { ProductService } from './shared/product.service';
 import { Product2Component } from './product2/product2.component';
 import { LoggerService } from './shared/logger.service';
 import { OtherPproductService } from './shared/other-pproduct.service';
+import { BindComponent } from './bind/bind.component';
+import { MultiplePipe } from './pipe/multiple.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     Product1Component,
-    Product2Component
+    Product2Component,
+    BindComponent,
+    MultiplePipe
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule, //响应式编程模块
     AppRoutingModule
   ],
   //全局注册都可以用到

@@ -1,0 +1,39 @@
+<p>
+  bind works!
+</p>
+<button (click)="doOnClick($event)">点我看控制台</button><br>
+<input value="稻草" (input)="onInput($event)"><br>
+<button disabled>html设置了disabled就不能点击按钮了，因为html属性不能改变，dom属性可以改变</button><br>
+
+<!--<p>
+  [class]="divClass" =>  将divClass绑定到class，全部替换原来的class
+  [class.c]="true"  => 为true将c这个class名绑定到class中
+  [ngClass]="{a:true,b:false,c:true}"  => 判断哪些class是需要的，
+  {a:true,b:false,c:true}可以是绑定后台定义的属性
+</p>
+-->
+<p>
+    双向绑定<input [(ngModel)]="name">{{name}}
+  </p>
+  <p>
+    响应式编程：<input [formControl]="searchInput">
+  </p>
+  <p>
+    管道：我的生日是{{birthday | date:'yyyy-MM-dd hh:mm:ss' | uppercase}}
+  </p>
+  <p>
+      管道：圆周率{{pi | number:'2.1-4'}}  1-4：小数最少一位，最多4位
+    </p>
+  <p>
+    自己写的管道：{{size|multiple:2}}
+  </p>
+
+
+
+
+
+
+
+
+
+
