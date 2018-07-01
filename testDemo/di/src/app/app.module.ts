@@ -11,6 +11,13 @@ import { LoggerService } from './shared/logger.service';
 import { OtherPproductService } from './shared/other-pproduct.service';
 import { BindComponent } from './bind/bind.component';
 import { MultiplePipe } from './pipe/multiple.pipe';
+import { OrderComponent } from './order/order.component';
+import { PriceQuoteComponent } from './price-quote/price-quote.component';
+import { BrotherComponent } from './brother/brother.component';
+import { LifeComponent } from './life/life.component';
+import { ChildComponent } from './child/child.component';
+import { TouyingComponent } from './touying/touying.component';
+import { Child2Component } from './child2/child2.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +25,14 @@ import { MultiplePipe } from './pipe/multiple.pipe';
     Product1Component,
     Product2Component,
     BindComponent,
-    MultiplePipe
+    MultiplePipe,
+    OrderComponent,
+    PriceQuoteComponent,
+    BrotherComponent,
+    LifeComponent,
+    ChildComponent,
+    TouyingComponent,
+    Child2Component
   ],
   imports: [
     BrowserModule,

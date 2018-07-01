@@ -9,3 +9,56 @@
 </div>
 
 <app-bind></app-bind>
+
+<p>组件通讯：</p>
+<div>
+  我是父组件：
+</div>
+<div>
+  <input type="text" placeholder="请输入股票代码" [(ngModel)]="stock">
+  <app-order [stockCode]="stock" [amount]="100"></app-order>
+</div>
+<div>
+  <!--
+  这个地方的(lastPrice)的lastPrice就是子组件中的@Output()下声明的lastPrice
+  @Output() 
+  lastPrice:EventEmitter<PriceQuote>=new EventEmitter();
+  或者可以子定义@Output('changePrice')  这里就是 (changePrice)="priceQuoteHandler($event)"
+-->
+  
+<app-price-quote (lastPrice)="priceQuoteHandler($event)"></app-price-quote>
+  这是报价组件的父组件：股票代码是{{priceQuote.stockCode}},价格{{priceQuote.lastPrice|number:'2.2-2'}}
+</div>
+
+<div>
+  <!--
+    <app-price-quote (buy)="buyHandler($event)"></app-price-quote>
+-->
+    <app-brother [priceQuote]="priceQuote"></app-brother>
+</div>
+
+<app-life [name]="title"></app-life>
+
+<div class="parent">
+  <p>问候语：<input type="text" [(ngModel)]="greeting"></p>
+  <p>姓名：<input type="text" [(ngModel)]="user.name"></p>
+  <app-child [greeting]="greeting" [user]="user"></app-child>
+</div>
+
+<div>
+  <app-child #child1  [greeting]="greeting" [user]="user"></app-child>
+  <app-child #child2  [greeting]="greeting" [user]="user"></app-child>
+  <button (click)="child2.greetingFn('稻草')">调用child2的greetingFn方法</button>
+</div>
+
+<div class="wrapper">
+  <app-touying>
+    <div>这个div是父组件投影到子组件的ng-content中</div>
+    <div class="header">这个是页头是父组件投影到子组件的ng-content中,title是{{title}}</div>
+    <div class="footer">这个是页脚是父组件投影到子组件的ng-content中</div>
+    <div [innerHTML]="divContent"></div>
+  </app-touying>
+  
+</div> 
+
+<div style="height:200px;"></div>
