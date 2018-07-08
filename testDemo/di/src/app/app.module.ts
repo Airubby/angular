@@ -18,6 +18,9 @@ import { LifeComponent } from './life/life.component';
 import { ChildComponent } from './child/child.component';
 import { TouyingComponent } from './touying/touying.component';
 import { Child2Component } from './child2/child2.component';
+import { TemplateFormComponent } from './template-form/template-form.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { ReactiveRegistComponent } from './reactive-regist/reactive-regist.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,10 @@ import { Child2Component } from './child2/child2.component';
     LifeComponent,
     ChildComponent,
     TouyingComponent,
-    Child2Component
+    Child2Component,
+    TemplateFormComponent,
+    ReactiveFormComponent,
+    ReactiveRegistComponent
   ],
   imports: [
     BrowserModule,

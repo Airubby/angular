@@ -25,10 +25,10 @@ export class AppComponent implements OnInit,AfterViewChecked,AfterViewInit {
   //在ngAfterViewInit，ngAfterViewChecked中想修改属性比如title，angular会报错，只有写在setTimeout()中才可以
   //setTimeout(()=>{this.title="稻草"},0)
   ngAfterViewChecked():void{
-    console.log("父组件的视图变更检测完毕");
+    //console.log("父组件的视图变更检测完毕");
   }
   ngAfterViewInit():void{
-    console.log("父组件的视图初始化完毕");
+    //console.log("父组件的视图初始化完毕");
   }
   //要接受子组件发射来的数据，就得声明一个相同的数据类型PriceQuote
   priceQuote:PriceQuote=new PriceQuote("",0);

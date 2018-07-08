@@ -47,10 +47,10 @@ export class ChildComponent implements OnInit,OnChanges,DoCheck,AfterViewChecked
   }
 
   ngAfterViewChecked():void{
-    console.log("子组件的视图变更检测完毕");
+    //console.log("子组件的视图变更检测完毕");
   }
   ngAfterViewInit():void{
-    console.log("子组件的视图初始化完毕");
+    //console.log("子组件的视图初始化完毕");
   }
 
 
