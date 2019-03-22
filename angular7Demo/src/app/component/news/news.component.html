@@ -1,0 +1,7 @@
+<app-header #header (outer)="run($event)"></app-header>
+
+<div #myBox>
+    我是一个dom节点
+ </div>
+ <button (click)="getChildRun()">获取子组件的方法</button>
+ <button (click)="getChildMsg()">获取子组件的msg</button>
