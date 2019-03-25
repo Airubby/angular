@@ -1,4 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<!--
 <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
@@ -17,4 +18,21 @@
 <app-transition></app-transition>
 <hr>
 <app-index></app-index>
+
+-->
+
+<header class="header">
+  <!-- <a [routerLink]="[ '/home' ]">首页</a>
+  <a routerLink='/news'>新闻组件</a>
+  <a [routerLink]="[ '/product']">商品页面</a> -->
+<a [routerLink]="[ '/home' ]" routerLinkActive="active">home</a>
+<a [routerLink]="[ '/news' ]" routerLinkActive="active">新闻产品</a>
+<a [routerLink]="[ '/form' ]" routerLinkActive="active">表单</a>
+<a [routerLink]="[ '/search' ]" routerLinkActive="active">搜索</a>
+<a [routerLink]="[ '/todelist' ]" routerLinkActive="active">todelist</a>
+<a [routerLink]="[ '/transition' ]" routerLinkActive="active">动画展示</a>
+<a [routerLink]="[ '/lifecycle' ]" routerLinkActive="active">声明周期</a>
+<a [routerLink]="[ '/index' ]" routerLinkActive="active">index</a>
+</header>
+
 <router-outlet></router-outlet>

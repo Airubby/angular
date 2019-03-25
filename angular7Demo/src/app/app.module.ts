@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 
 import {FormsModule} from '@angular/forms'; 
 
+//引入HttpClientModule
+import { HttpClientModule,HttpClientJsonpModule} from '@angular/common/http';
+
 //引入并且配置服务
 import { StorageService } from './services/storage.service';
 
@@ -18,6 +21,9 @@ import { TransitionComponent } from './component/transition/transition.component
 import { FooterComponent } from './component/footer/footer.component';
 import { IndexComponent } from './component/index/index.component';
 import { LifecycleComponent } from './component/lifecycle/lifecycle.component';
+import { NewdetailComponent } from './component/newdetail/newdetail.component';
+import { WelcomeComponent } from './component/home/welcome/welcome.component';
+import { SettingComponent } from './component/home/setting/setting.component';
 
 @NgModule({
   declarations: [
@@ -31,12 +37,17 @@ import { LifecycleComponent } from './component/lifecycle/lifecycle.component';
     TransitionComponent,
     FooterComponent,
     IndexComponent,
-    LifecycleComponent
+    LifecycleComponent,
+    NewdetailComponent,
+    WelcomeComponent,
+    SettingComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    HttpClientJsonpModule
   ],
   providers: [StorageService],
   bootstrap: [AppComponent]
