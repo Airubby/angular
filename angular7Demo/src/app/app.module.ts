@@ -11,6 +11,8 @@ import { StorageService } from './services/storage.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+//不用模块化路由就在app.module中配置
 import { FormComponent } from './component/form/form.component';
 import { SearchComponent } from './component/search/search.component';
 import { TodolistComponent } from './component/todolist/todolist.component';

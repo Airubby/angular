@@ -47,7 +47,14 @@ const routes: Routes = [
   {
     path:'lifecycle',component:LifecycleComponent
   },
-  
+  //模块化路由配置
+  {
+    path:'user',loadChildren:'./module/user/user.module#UserModule'
+  },
+  //模块化路由配置
+  {
+    path:'product',loadChildren:'./module/product/product.module#ProductModule'
+  },
   //匹配不到路由的时候加载的组件 或者跳转的路由
   {
     path:'**',redirectTo:'home'
