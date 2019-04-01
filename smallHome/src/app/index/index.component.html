@@ -1,0 +1,244 @@
+<div class="loncom_content">
+    <div class="loncom-index-body">
+        <div class="header">
+            <div class="row">
+                <div class="row-side">
+                    <div class="wk-xz">
+                        <div class="wk-sj-right"></div>
+                        <em class="wk-sbx"></em>
+                        <em class="wk-sbx" style="right:-68px"></em>
+                        <em class="wk-tix"></em>
+                    </div>
+                </div>
+                <div class="row-cen">
+                    <div class="title">
+                        <em class="title-left"></em>
+                        <div class="title-con">微模块设施监控系统<span class="title-bg"></span></div>
+                        <em class="title-right"></em>
+                    </div>
+                </div>
+                <div class="row-side" style="padding: 0 0 0 50px">
+                    <div class="wk-xz" style="transform:scalex(-1)">
+                        <div class="wk-sj-right"></div>
+                        <em class="wk-sbx"></em>
+                        <em class="wk-sbx" style="right:-68px"></em>
+                        <em class="wk-tix"></em>
+                        <ul>
+                            <li><img src="assets/images/fullscreen.png"></li>
+                            <li><img src="assets/images/alarm.png"></li>
+                            <li><img src="assets/images/manage.png"></li>
+                            <li><img src="assets/images/account.png"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main-left">
+                <div class="loncom-index-box">
+                    <div class="loncom-title">
+                        <div class="loncom-title-con">PUE</div>
+                        <div class="loncom-title-line">
+                            <em class="loncom-line-em" *ngFor="let item of numberarr"></em>
+                        </div>
+                    </div>
+                    <div class="loncom-index-con">
+                        <div class="loncom-box">
+                            <em class="topleft"></em>
+                            <em class="topright"><em class="line"></em></em>
+                            <em class="bottomleft"><em class="line"></em></em>
+                            <em class="bottomright"></em>
+                            <div class="loncom-box-con" echarts [options]="optionsPUE" style="width:100%; height: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="loncom-index-box">
+                    <div class="loncom-title">
+                        <div class="loncom-title-con">能效分布占比</div>
+                        <div class="loncom-title-line">
+                            <em class="loncom-line-em" *ngFor="let item of numberarr"></em>
+                        </div>
+                    </div>
+                    <div class="loncom-index-con">
+                        <div class="loncom-box">
+                            <em class="topleft"></em>
+                            <em class="topright"><em class="line"></em></em>
+                            <em class="bottomleft"><em class="line"></em></em>
+                            <em class="bottomright"></em>
+                            <div class="loncom-box-con" echarts [options]="optionsNX" style="width:100%; height: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="loncom-index-box">
+                    <div class="loncom-title">
+                        <div class="loncom-title-con">机柜功耗排行</div>
+                        <div class="loncom-title-line">
+                            <em class="loncom-line-em" *ngFor="let item of numberarr"></em>
+                        </div>
+                    </div>
+                    <div class="loncom-index-con" style="height:220px;">
+                        <div class="loncom-box" style="border-radius: 0;">
+                            <ul class="loncom-index-gh">
+                                <li>
+                                    <div class="name">机柜</div><div class="value">功耗</div>
+                                </li>
+                                <li>
+                                    <div class="name">机柜01</div>
+                                    <div class="value">
+                                        <div class="loncom-progress">
+                                            <em></em><em></em><em></em><em></em><em></em><em></em>
+                                            <em></em><em></em><em></em><em></em><em></em><em></em>
+                                            <em></em><em></em><em></em><em></em><em></em><em></em>
+                                            <em></em><em></em><em></em><em></em><em></em><em></em>
+                                        </div>
+                                        <span>65%</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="name">机柜02</div>
+                                    <div class="value">
+                                        <div class="loncom-progress">
+                                            <em></em><em></em><em></em><em></em><em></em><em></em>
+                                            <em></em><em></em><em></em><em></em><em></em><em></em>
+                                            <em></em><em></em><em></em><em></em><em></em><em></em>
+                                            <em></em><em></em><em></em><em></em><em></em><em></em>
+                                            <em></em><em></em><em></em><em></em><em></em><em></em>
+                                        </div>
+                                        <span>85%</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="name">机柜03</div>
+                                    <div class="value">
+                                        <div class="loncom-progress">
+                                            <em></em><em></em><em></em><em></em><em></em><em></em>
+                                            <em></em><em></em><em></em><em></em><em></em><em></em>
+                                        </div>
+                                        <span>35%</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="name">机柜04</div>
+                                    <div class="value">
+                                        <div class="loncom-progress">
+                                            <em></em><em></em><em></em><em></em><em></em><em></em>
+                                            <em></em><em></em><em></em><em></em><em></em><em></em>
+                                            <em></em><em></em><em></em>
+                                        </div>
+                                        <span>45%</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="name">机柜05</div>
+                                    <div class="value">
+                                        <div class="loncom-progress">
+                                            <em></em><em></em><em></em><em></em><em></em><em></em>
+                                            <em></em><em></em><em></em><em></em><em></em><em></em>
+                                            <em></em><em></em><em></em><em></em><em></em><em></em>
+                                            <em></em><em></em><em></em><em></em><em></em><em></em>
+                                            <em></em><em></em><em></em><em></em><em></em><em></em>
+                                            <em></em><em></em><em></em>
+                                        </div>
+                                        <span>90%</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-cen">
+                <img src="assets/images/home.png">
+            </div>
+            <div class="main-right">
+                <div class="loncom-index-box">
+                    <div class="loncom-title">
+                        <div class="loncom-title-con">告警状态</div>
+                        <div class="loncom-title-line">
+                            <em class="loncom-line-em" *ngFor="let item of numberarr"></em>
+                        </div>
+                    </div>
+                    <div class="loncom-index-con" style="height: 220px;">
+                        <div class="loncom-box-con" echarts [options]="optionsAlarm" style="width:100%; height: 100%"></div>
+                    </div>
+                </div>
+                <div class="loncom-index-box">
+                    <div class="loncom-boxpic">
+                        <ul>
+                            <li>
+                                <img src="assets/images/home1.png">
+                                <div>温湿度</div>
+                            </li>
+                            <li>
+                                <img src="assets/images/home2.png">
+                                <div>漏水</div>
+                            </li>
+                            <li>
+                                <img src="assets/images/home3.png">
+                                <div>空调</div>
+                            </li>
+                            <li>
+                                <img src="assets/images/home4.png">
+                                <div>UPS</div>
+                            </li>
+                            <li>
+                                <img src="assets/images/home5.png">
+                                <div>电池</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="loncom-index-box">
+                    <div class="loncom-index-con">
+                        <div class="loncom-box">
+                            <em class="topleft"></em>
+                            <em class="topright"><em class="line"></em></em>
+                            <em class="bottomleft"><em class="line"></em></em>
+                            <em class="bottomright"></em>
+                            <div class="loncom-alarmbox">
+                                <ul>
+                                    <li class="loncom-pdlr20"><span>2019-01-10 10:10:00</span>环境温度过高</li>
+                                    <li class="loncom-pdlr20"><span>2019-01-10 10:10:00</span>室内环境温度过高</li>
+                                    <li class="loncom-pdlr20"><span>2019-01-10 10:10:00</span>空调环境温度过高</li>
+                                    <li class="loncom-pdlr20"><span>2019-01-10 10:10:00</span>设备管道漏水严重</li>
+                                    <li class="loncom-pdlr20"><span>2019-01-10 10:10:00</span>环境温度过高环境温度过高</li>
+                                    <li class="loncom-pdlr20"><span>2019-01-10 10:10:00</span>环境温度过低</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="loncom-index-box">
+                    <div class="loncom-index-con">
+                        <div class="loncom-box">
+                            <em class="topleft"></em>
+                            <em class="topright"><em class="line"></em></em>
+                            <em class="bottomleft"><em class="line"></em></em>
+                            <em class="bottomright"></em>
+                            <div class="loncom-numbox">
+                                <ul>
+                                    <li>
+                                        <div class="num down"><span class="numspan">22.5</span></div>
+                                        <div>温度</div>
+                                    </li>
+                                    <li>
+                                        <div class="num up"><span class="numspan">30.5</span></div>
+                                        <div>湿度</div>
+                                    </li>
+                                    <li>
+                                        <div class="num">23.5</div>
+                                        <div>空调设定温度</div>
+                                    </li>
+                                    <li>
+                                        <div class="num">22.5</div>
+                                        <div>空调设定湿度</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,583 @@
+.loncom-index-body{
+    width: 100%;
+    overflow: hidden;
+    background: url(../../assets/images/homebg.png) no-repeat center 200px;
+}
+.header{
+    width: 100%;
+    height: 90px;
+    background: #000D46;
+    .row-side{
+        width: calc(50% - 340px);
+        padding-right: 50px;
+        .wk-xz{
+            height:60px;
+            width: 100%;
+            background: #072567; 
+            position:relative;
+            border-bottom: 1px solid #103c86;
+            .wk-sj-right{
+                position: absolute;
+                top: 0;
+                right: -23px;
+                border-top: 37px solid transparent;
+                border-bottom: 24px solid transparent;
+                border-left: 24px solid #072567;
+            }
+            .wk-sj-right:before{
+                content: "";
+                width: 47px;
+                height: 1px;
+                position: absolute;
+                right: -11px;
+                top: -20px;
+                background: #103c86;
+                transform: rotate(57deg);
+            }
+            .wk-sj-right:after{
+                content: "";
+                width: 34px;
+                height: 1px;
+                position: absolute;
+                right: -4px;
+                bottom: -12px;
+                background: #103c86;
+                transform: rotate(-44deg);
+            }
+            .wk-sbx{
+                width: 70px;
+                height: 8px;
+                position: absolute;
+                right: -50px;
+                top: 2px;
+                background: #072567;
+                transform: rotate(54deg) skew(-35deg); 
+            }
+            .wk-tix{
+                position: absolute;
+                bottom: 0px;
+                right: -78px;
+                width: 68px;
+                height: 0;
+                border-bottom: 20px solid #072567;
+                border-left: 18px solid transparent;
+                border-right: 15px solid transparent;
+            }
+            ul{
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                li{
+                    float: left;
+                    margin:15px 0 0 45px;
+                    img{
+                        width: 30px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .row-cen{
+        width: 680px;
+        height: 100%;
+        overflow: hidden;
+        .title{
+            width:calc(100% - 112px);
+            margin:0 auto;
+            height:90px;
+            line-height: 80px;
+            text-align: center;
+            background: #072567;
+            position: relative;
+            .title-con{
+                color:#E3F0FF;
+                font-size:40px;
+                display: block;
+                height:100%;
+                width:100%;
+                .title-bg{
+                    display: block;
+                    width: 100%;
+                    height: 4px;
+                    background: radial-gradient(300px 90px, #4170F9, #072567);
+                    position: relative;
+                    bottom: -6px;
+                }
+            }
+            .title-con:before{
+                content:"";
+                width: 51%;
+                height: 2px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                background: linear-gradient(to left, #4170F9, #0C3C7F);
+            }
+            .title-con:after{
+                content:"";
+                width: 51%;
+                height: 2px;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                background: linear-gradient(to right, #4170F9, #0C3C7F);
+            }
+            .title-left{
+                height:0;
+                position:absolute;
+                left:-60px;
+                top:0;
+                width:0;
+                border-top:90px solid #072567;
+                border-left:60px solid transparent;
+            }
+            .title-left:before{
+                content: "";
+                width: 20px;
+                height: 4px;
+                position: absolute;
+                background: #3469BA;
+                z-index: 99;
+                bottom: 0;
+                right: -20px;
+            }
+            .title-left:after{
+                content: "";
+                width: 40px;
+                height: 4px;
+                position: absolute;
+                background: #3469BA;
+                z-index: 99;
+                bottom: 0;
+                right: -19px;
+                transform: rotate(54deg);
+            }
+            .title-right{
+                height:0;
+                position:absolute;
+                right:-60px;
+                top:0;
+                width:0;
+                border-top:90px solid #072567;
+                border-right:60px solid transparent;
+            }
+            .title-right:before{
+                content: "";
+                width: 20px;
+                height: 4px;
+                position: absolute;
+                background: #3469BA;
+                z-index: 99;
+                bottom: 0;
+                right: -1px;
+            }
+            .title-right:after{
+                content: "";
+                width: 40px;
+                height: 4px;
+                position: absolute;
+                background: #3469BA;
+                z-index: 99;
+                bottom: 0;
+                right: -21px;
+                transform: rotate(-54deg);
+            }
+        }
+        .title:before{
+            content: "";
+            width: 1px;
+            height: 100px;
+            background: #103c86;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            left: -33px;
+            bottom: 0;
+            transform: rotate(-33deg);
+            z-index: 9;
+        }
+        .title:after{
+            content: "";
+            width: 1px;
+            height: 100px;
+            background: #103c86;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            right: -33px;
+            bottom: 0;
+            transform: rotate(33deg);
+            z-index: 9;
+        }
+    }
+    
+}
+.main{
+    padding: 0 20px;
+    .main-left,.main-right{
+        width: 22%;
+        float: left;
+        .loncom-index-con{
+            width: 100%;
+            height: 200px;
+            margin-top:15px;
+        }
+    }
+    .main-cen{
+        width: 56%;
+        float: left;
+        padding: 100px 20px 0;
+    }
+    .loncom-index-box{
+        margin-bottom: 20px;
+    }
+    .loncom-index-gh{
+        width: 100%;
+        padding: 0 20px;
+        li{
+            width: 100%;
+            color: #0086FF;
+            font-size: 14px;
+            height: 35px;
+            line-height: 35px;
+            .name{
+                width: 85px;
+                text-indent: 10px;
+                float: left;
+                color: #fff;
+            }
+            .value{
+                width: calc(100% - 85px);
+                float: left;
+                span{
+                    width: 50px;
+                    text-indent: 5px;
+                    display: inline-block;
+                }
+                .loncom-progress{
+                    width: calc(100% - 50px);
+                    height: 11px;
+                    background: #021645;
+                    display: inline-block;
+                    em{
+                        width: 2px;
+                        height: 100%;
+                        background: #008EFF;
+                        margin: 0 1px;
+                        display: block;
+                        float: left;
+                    }
+                }
+            }
+        }
+        li:nth-of-type(1){
+            .name{
+                color: #0086FF;
+            }
+            .value{
+                text-align: center;
+            }
+        }
+        li:nth-of-type(2n){
+            background: #000B2C;
+        }
+    }
+    .loncom-boxpic{
+        overflow: hidden;
+        color: #5B6A93;
+        li{
+            width: 20%;
+            text-align: center;
+            float: left;
+            font-size: 12px;
+            div{
+                margin-top: 10px;
+            }
+        }
+    }
+    .loncom-alarmbox{
+        color: #EC8603;
+        font-size: 14px;
+        height: 100%;
+        line-height: 32px;
+        ul{
+            margin: 5px 0 0 0;
+            li{
+                height: 32px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                span{
+                    float: right;
+                    color: #5B6A93;
+                }
+            }
+            li.loncom-pdlr20:nth-of-type(2n){
+                background: #020B32;
+            }
+        }
+    }
+    .loncom-numbox{
+        width: calc(100% - 10px);
+        height: calc(100% - 10px);
+        top: 0;
+        position: absolute;
+        ul{
+            width: 100%;
+            height: 100%;
+            li{
+                width: calc(50% - 10px);
+                height: calc(50% - 10px);
+                text-align: center;
+                background: #030E31;
+                margin: 10px 0 0 10px;
+                float: left;
+                font-size: 12px;
+                color: #5B6A93;
+                .num{
+                    color: #fff;
+                    font-size: 28px;
+                    font-weight: bold;
+                    margin: 10px 0 5px 0;
+                    .numspan{
+                        position: relative;
+                        display: inline-block;
+                    }
+                    .numspan:before{
+                        content:"";
+                        display: block;
+                        width: 4px;
+                        height: 16px;
+                        position: absolute;
+                        right: -11px;
+                        bottom:12px;
+                    }
+                    .numspan:after{
+                        content: "";
+                        width: 0;
+                        height: 0;
+                        border-left: 5px solid transparent;
+                        border-right: 5px solid transparent;
+                        position: absolute;
+                        right: -14px;
+                    }
+                }
+                .up{
+                    color: #EB8500;
+                    .numspan:before{
+                        background: #EB8500;
+                    }
+                    .numspan:after{
+                        border-bottom: 8px solid #eb8513;
+                        bottom: 22px;
+                    }
+                }
+                .down{
+                    .numspan:before{
+                        background: #007DF3;
+                    }
+                    .numspan:after{
+                        border-top: 8px solid #007DF3;
+                        bottom: 10px;
+                    }
+                }
+            }
+        }
+        
+    }
+
+}
+
+
+.loncom-title{
+    width: 100%;
+    height: 40px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+    .loncom-title-con{
+        width: calc(80% - 10px);
+        height: 100%;
+        position: relative;
+        text-indent: 18px;
+        float: left;
+    }
+    .loncom-title-con:before{
+        content: "";
+        width: 16px;
+        height: 2px;
+        position: absolute;
+        left: -2px;
+        bottom: 5px;
+        transform: rotate(45deg);
+        background: #243966;
+    }
+    .loncom-title-con:after{
+        content: "";
+        width: calc(100% - 10px);
+        height: 2px;
+        position: absolute;
+        left: 10px;
+        bottom: 0;
+        background: #243966;
+    }
+    .loncom-title-line{
+        width: 20%;
+        height: 100%;
+        position: relative;
+        float: left;
+        .loncom-line-em(@count) when (@count > 0) {
+            .loncom-line-em((@count - 1));
+            .loncom-line-em:nth-of-type(@{count}){
+                position: absolute;
+                bottom: 6px;
+                left: (-7px * @count);
+                width: 12px;
+                height: 2px;
+                background: #4E6490;
+                transform: rotate(-45deg) skew(27deg);
+            }
+        }
+        .loncom-line-em(12)
+    }
+    .loncom-title-line:before{
+        content: "";
+        width: 16px;
+        height: 2px;
+        position: absolute;
+        left: -3px;
+        bottom: 5px;
+        transform: rotate(-45deg);
+        background: #243966;
+    }
+    .loncom-title-line:after{
+        content: "";
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+        background: #243966;
+    }
+}
+
+.loncom-box{
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0px 0px 2px #103c86;
+    background: rgba(2, 17, 71, 0.25);
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 20px 0 20px;
+    .topleft{
+        width: 10px;
+        height: 10px;
+        border-top: 2px solid #277BDB;
+        border-left: 2px solid #277BDB;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .bottomright{
+        width: 10px;
+        height: 10px;
+        border-bottom: 2px solid #277BDB;
+        border-right: 2px solid #277BDB;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    .topright{
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        .line:before{
+            content: "";
+            width: 10px;
+            height: 2px;
+            top: 0;
+            left: 0;
+            background: #277BDB;
+            position: absolute;
+        }
+        .line:after{
+            content: "";
+            width: 2px;
+            height: 10px;
+            bottom: 0;
+            right: 0;
+            background: #277BDB;
+            position: absolute;
+        }
+    }
+    .topright:before{
+        content: "";
+        position: absolute;
+        right: -2px;
+        top: -2px;
+        width: 0;
+        height: 0;
+        border-top: 16px solid transparent;
+        border-left: 16px solid transparent;
+    }
+    .topright:after{
+        content: "";
+        width: 70px;
+        height: 9px;
+        position: absolute;
+        right: -30px;
+        top: 11px;
+        box-shadow: inset 0px 2px 0px #277bdb;
+        transform: rotate(45deg);
+    }
+    .bottomleft{
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        .line:before{
+            content: "";
+            width: 10px;
+            height: 2px;
+            bottom: 0;
+            right: 0;
+            background: #277BDB;
+            position: absolute;
+        }
+        .line:after{
+            content: "";
+            width: 2px;
+            height: 10px;
+            top: 0;
+            left: 0;
+            background: #277BDB;
+            position: absolute;
+        }
+    }
+    .bottomleft:before{
+        content: "";
+        position: absolute;
+        left: -2px;
+        bottom: -2px;
+        width: 0;
+        height: 0;
+        border-bottom: 16px solid #000d46;
+        border-right: 16px solid transparent;
+    }
+    .bottomleft:after{
+        content: "";
+        width: 70px;
+        height: 9px;
+        position: absolute;
+        right: -12px;
+        top: 11px;
+        box-shadow: inset 0px 2px 0px #277bdb;
+        transform: rotate(45deg);
+    }
+}
