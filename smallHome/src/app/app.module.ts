@@ -6,11 +6,13 @@ import {NgxEchartsModule} from 'ngx-echarts'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
+import { LoncomProgressComponent } from './component/loncom-progress/loncom-progress.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    IndexComponent
+    IndexComponent,
+    LoncomProgressComponent
   ],
   imports: [
     BrowserModule,

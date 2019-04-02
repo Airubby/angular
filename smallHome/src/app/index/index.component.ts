@@ -185,7 +185,7 @@ export class IndexComponent implements OnInit {
             series: [
                 {
                     type:'pie',
-                    radius: ['70%', '82%'],
+                    radius: ['65%', '77%'],
                     silent:true,  //不触发鼠标事件，及鼠标放上去无效果
                     clockwise:false,  //false 逆时针方向
                     data:[
@@ -376,7 +376,7 @@ export class IndexComponent implements OnInit {
                 },
                 {
                     type:'pie',
-                    radius: ['61%', '62%'],
+                    radius: ['56%', '57%'],
                     silent:true,  //不触发鼠标事件，及鼠标放上去无效果
                     data:[
                         {value:1, name:'one'},
@@ -546,7 +546,7 @@ export class IndexComponent implements OnInit {
                 },
                 {
                     type:'pie',
-                    radius: ['90%', '91%'],
+                    radius: ['85%', '86%'],
                     silent:true,  //不触发鼠标事件，及鼠标放上去无效果
                     data:[
                         {value:1, name:'one'},
@@ -716,7 +716,7 @@ export class IndexComponent implements OnInit {
                 },
                 {
                     type:'pie',
-                    radius: ['97%', '98%'],
+                    radius: ['92%', '93%'],
                     silent:true,  //不触发鼠标事件，及鼠标放上去无效果
                     data:[
                         {value:1, name:'one'},

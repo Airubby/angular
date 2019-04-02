@@ -35,14 +35,14 @@
         </div>
         <div class="main">
             <div class="main-left">
-                <div class="loncom-index-box">
+                <div class="loncom-index-box loncom-index-box-left">
                     <div class="loncom-title">
                         <div class="loncom-title-con">PUE</div>
                         <div class="loncom-title-line">
                             <em class="loncom-line-em" *ngFor="let item of numberarr"></em>
                         </div>
                     </div>
-                    <div class="loncom-index-con">
+                    <div class="loncom-index-con loncom-index-con-left">
                         <div class="loncom-box">
                             <em class="topleft"></em>
                             <em class="topright"><em class="line"></em></em>
@@ -52,14 +52,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="loncom-index-box">
+                <div class="loncom-index-box loncom-index-box-left">
                     <div class="loncom-title">
                         <div class="loncom-title-con">能效分布占比</div>
                         <div class="loncom-title-line">
                             <em class="loncom-line-em" *ngFor="let item of numberarr"></em>
                         </div>
                     </div>
-                    <div class="loncom-index-con">
+                    <div class="loncom-index-con loncom-index-con-left">
                         <div class="loncom-box">
                             <em class="topleft"></em>
                             <em class="topright"><em class="line"></em></em>
@@ -76,7 +76,7 @@
                             <em class="loncom-line-em" *ngFor="let item of numberarr"></em>
                         </div>
                     </div>
-                    <div class="loncom-index-con" style="height:220px;">
+                    <div class="loncom-index-con" style="height:210px;">
                         <div class="loncom-box" style="border-radius: 0;">
                             <ul class="loncom-index-gh">
                                 <li>
@@ -148,17 +148,25 @@
                 </div>
             </div>
             <div class="main-cen">
-                <img src="assets/images/home.png">
+                <div class="cen-img"><div class="cen-img-con"><img src="assets/images/home.png"></div></div>
+                <div class="cen-bottom">
+                    <ul>
+                        <li><img src="assets/images/home-pd.png"><div>配电系统</div></li>
+                        <li><img src="assets/images/home-kt.png"><div>空调系统</div></li>
+                        <li><img src="assets/images/home-hj.png"><div>环境系统</div></li>
+                        <li><img src="assets/images/home-it.png"><div>IT系统</div></li>
+                    </ul>
+                </div>
             </div>
             <div class="main-right">
-                <div class="loncom-index-box">
+                <div class="loncom-index-box loncom-index-box-right">
                     <div class="loncom-title">
                         <div class="loncom-title-con">告警状态</div>
                         <div class="loncom-title-line">
                             <em class="loncom-line-em" *ngFor="let item of numberarr"></em>
                         </div>
                     </div>
-                    <div class="loncom-index-con" style="height: 220px;">
+                    <div class="loncom-index-con loncom-index-con-right">
                         <div class="loncom-box-con" echarts [options]="optionsAlarm" style="width:100%; height: 100%"></div>
                     </div>
                 </div>
@@ -188,8 +196,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="loncom-index-box">
-                    <div class="loncom-index-con">
+                <div class="loncom-index-box" style="margin-bottom: 20px;">
+                    <div class="loncom-index-con" style="height: 200px;">
                         <div class="loncom-box">
                             <em class="topleft"></em>
                             <em class="topright"><em class="line"></em></em>
