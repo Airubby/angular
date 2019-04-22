@@ -27,6 +27,8 @@ import { NewdetailComponent } from './component/newdetail/newdetail.component';
 import { WelcomeComponent } from './component/home/welcome/welcome.component';
 import { SettingComponent } from './component/home/setting/setting.component';
 
+import { DirectiveModule } from './directive/directive.module'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,7 +51,8 @@ import { SettingComponent } from './component/home/setting/setting.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    HttpClientJsonpModule
+    HttpClientJsonpModule,
+    DirectiveModule
   ],
   providers: [StorageService],
   bootstrap: [AppComponent]
