@@ -1,7 +1,20 @@
-<p appHighlight>directive works! Highlight me!</p>
-<p [appHighlight]="color">选择变色</p>
+<p appHighlight defaultColor="violet">directive works! Highlight me!</p>
+<p [appHighlight]="color" defaultColor="violet">选择变色</p>
 <div>
     <input type="radio" name="colors" (click)="color='lightgreen'">Green
     <input type="radio" name="colors" (click)="color='red'">Red
     <input type="radio" name="colors" (click)="color='cyan'">Cyan
   </div>
+
+  <h2>结构性指令</h2>
+
+  <button (click)="condition=!condition">改变显示</button>
+
+  <p *appShowhide="condition" class="unless a">
+    (A) This paragraph is displayed because the condition is false.
+  </p>
+  
+  <p *appShowhide="!condition" class="unless b">
+    (B) Although the condition is true,
+    this paragraph is displayed because appUnless is set to false.
+  </p>
