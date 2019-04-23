@@ -4,12 +4,14 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { ProductComponent } from './product.component';
 import {DirectiveComponent} from './component/directive/directive.component';
+import {PipeComponent} from './component/pipe/pipe.component';
 
 const routes: Routes = [
   {
     path:'',component:ProductComponent,
     children:[
       {path:'directive',component:DirectiveComponent},
+      {path:'pipe',component:PipeComponent},
       {path:'**',redirectTo:'directive'}
     ]
   },
