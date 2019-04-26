@@ -8,15 +8,19 @@ import { DirectiveComponent } from './component/directive/directive.component';
 import { PipeComponent } from './component/pipe/pipe.component';
 
 import {DirectiveModule} from '../../directive/directive.module';
-import { PipeModule } from '../../pipe/pipe.module'
+import { PipeModule } from '../../pipe/pipe.module';
+import { UtilComponent } from './component/util/util.component'
+
+import {NgxEchartsModule} from 'ngx-echarts'
 
 @NgModule({
-  declarations: [ProductComponent, DirectiveComponent, PipeComponent],
+  declarations: [ProductComponent, DirectiveComponent, PipeComponent, UtilComponent],
   imports: [
     CommonModule,
     FormsModule,
     ProductRoutingModule,
     DirectiveModule,
+    NgxEchartsModule,
     PipeModule
   ]
 })

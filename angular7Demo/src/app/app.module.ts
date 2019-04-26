@@ -29,6 +29,7 @@ import { SettingComponent } from './component/home/setting/setting.component';
 
 import { DirectiveModule } from './directive/directive.module'
 
+
 @NgModule({
   declarations: [
     AppComponent,

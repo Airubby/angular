@@ -1,5 +1,7 @@
 
-<a [routerLink]="[ '/product/directive' ]" routerLinkActive="active" style="margin-right: 20px;">指令</a>
-<a [routerLink]="[ '/product/pipe' ]" routerLinkActive="active">管道</a>
-
+<header>
+<a [routerLink]="[ '/product/directive' ]" routerLinkActive="active" class="mr20">指令</a>
+<a [routerLink]="[ '/product/pipe' ]" routerLinkActive="active" class="mr20">管道</a>
+<a [routerLink]="[ '/product/util' ]" routerLinkActive="active">工具函数</a>
+</header>
 <router-outlet></router-outlet>

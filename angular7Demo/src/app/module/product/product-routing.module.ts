@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ProductComponent } from './product.component';
 import {DirectiveComponent} from './component/directive/directive.component';
 import {PipeComponent} from './component/pipe/pipe.component';
+import {UtilComponent} from './component/util/util.component';
 
 const routes: Routes = [
   {
@@ -12,6 +13,7 @@ const routes: Routes = [
     children:[
       {path:'directive',component:DirectiveComponent},
       {path:'pipe',component:PipeComponent},
+      {path:'util',component:UtilComponent},
       {path:'**',redirectTo:'directive'}
     ]
   },
