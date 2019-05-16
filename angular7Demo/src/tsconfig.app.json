@@ -6,6 +6,7 @@
     "paths": {
       "@app/*": [ "app/*" ]
     },
+    "sourceMap": false,
     "types": []
   },
   "exclude": [

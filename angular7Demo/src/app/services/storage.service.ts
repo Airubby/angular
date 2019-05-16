@@ -7,7 +7,8 @@ export class StorageService {
 
   serverConfig:any;
 
-  constructor() { }
+  constructor() {
+  }
   set(key:string,value:any){
     localStorage.setItem(key,JSON.stringify(value));
   }
@@ -18,8 +19,8 @@ export class StorageService {
   remove(key:string){
     localStorage.removeItem(key);
   }
-  setServerConfig(data:any){
-    this.serverConfig=data;
+  setServerConfig(){
+
   }
   getServerConfig(){
     return this.serverConfig;

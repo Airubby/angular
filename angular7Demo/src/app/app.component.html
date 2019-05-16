@@ -20,7 +20,7 @@
 <app-index></app-index>
 
 -->
-
+<div id="app" class="black_theme">
 <header class="header">
   <!-- <a [routerLink]="[ '/home' ]">首页</a>
   <a routerLink='/news'>新闻组件</a>
@@ -36,8 +36,14 @@
 <a [routerLink]="[ '/user' ]" routerLinkActive="active">用户模块</a>
 <a routerLink="/product" routerLinkActive="active">产品模块</a>
 <!-- <a [routerLink]="[ '/product' ]" routerLinkActive="active">产品模块</a> -->
+<span class="fr">
+<button (click)="changeTheme('default_theme')">默认风格</button>
+<button (click)="changeTheme('black_theme')">黑色风格</button>
+</span>
 </header>
 <!-- <p appHighlight>
   公共
 </p> -->
+
 <router-outlet></router-outlet>
+</div>

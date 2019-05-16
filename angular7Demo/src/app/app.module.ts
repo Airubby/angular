@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 
 import {FormsModule} from '@angular/forms'; 
 
+//打包后的静态文件刷新获取不到页面路径地址的问题
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+
 //引入HttpClientModule
 import { HttpClientModule,HttpClientJsonpModule} from '@angular/common/http';
 
@@ -55,7 +58,7 @@ import { DirectiveModule } from './directive/directive.module'
     HttpClientJsonpModule,
     DirectiveModule
   ],
-  providers: [StorageService],
+  providers: [StorageService,{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

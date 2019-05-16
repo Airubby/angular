@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular';
+  changeTheme(type){
+      console.log(type)
+      console.log(document.getElementById('app'))
+      document.getElementById('app').className = type;
+  }
 }
