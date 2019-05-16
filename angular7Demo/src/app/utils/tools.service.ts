@@ -125,6 +125,31 @@ export class ToolsService {
     }
   }
 
+  WebSocket(sendMsg, callback){
+    try {
+        //var SOCKECT_ADDR = "ws://" + url +":"+ port;
+        //let host=window.document.location.host;
+        //let SOCKECT_ADDR="ws://"+host+"/ws"
+        let SOCKECT_ADDR="ws://192.168.0.6:8090/ws"
+        let ws = new WebSocket(SOCKECT_ADDR);
+        ws.onopen = function (event) {
+            console.log(event)
+            console.log("已经与服务器建立了连接\r\n当前连接状态：" + event);
+            ws.send(sendMsg);
+        };
+      
+        ws.onmessage = callback;
+        ws.onclose = function (event) {
+          console.log(event)
+        };
+        ws.onerror = function (event) {
+          console.log("WebSocket异常！" + event.toString());
+        };
+  
+    } catch (ex) {
+        console.log(ex);
+    }
+  }
 
 
 

@@ -20,7 +20,6 @@ export class StorageService {
     localStorage.removeItem(key);
   }
   setServerConfig(){
-
   }
   getServerConfig(){
     return this.serverConfig;

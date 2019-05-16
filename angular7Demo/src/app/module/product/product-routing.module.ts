@@ -6,6 +6,7 @@ import { ProductComponent } from './product.component';
 import {DirectiveComponent} from './component/directive/directive.component';
 import {PipeComponent} from './component/pipe/pipe.component';
 import {UtilComponent} from './component/util/util.component';
+import {WebsocketComponent} from './component/websocket/websocket.component';
 
 const routes: Routes = [
   {
@@ -14,6 +15,7 @@ const routes: Routes = [
       {path:'directive',component:DirectiveComponent},
       {path:'pipe',component:PipeComponent},
       {path:'util',component:UtilComponent},
+      {path:'ws',component:WebsocketComponent},
       {path:'**',redirectTo:'directive'}
     ]
   },

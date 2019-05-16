@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { HttpserviceService } from '../../services/httpservice.service';
+import { HttpserviceService } from '@app/services/httpservice.service';
 @Component({
   selector: 'app-newdetail',
   templateUrl: './newdetail.component.html',
